@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///Users/haleyt/VideoPalace/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Robert &amp; Jesse's Video Palace</title>
+    <link href="./Robert & Jesse's Video Palace_files/css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="./Robert & Jesse's Video Palace_files/VideoPalace.css">
+    <script src="./Robert & Jesse's Video Palace_files/jquery-2.1.1.js"></script>
+  </head>
+  <body>
+    <div class="content-wrapper">
+      <header>
+        <img src="./Robert & Jesse's Video Palace_files/VideoPalace_Animated_3.gif">
+      </header>
+      <p class="latest">this is what we're doing now</p>
+      <featured>
+        <iframe src="./Robert & Jesse's Video Palace_files/125855414.html" width="800" height="400" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </featured>
+
+      <ul class="videos">
+        <li style="background-image: url(&#39;loses_phone.png&#39;)">
+          <info name="https://player.vimeo.com/video/123974453?title=0&amp;byline=0&amp;portrait=0">
+            <p>Robert loses his phone</p>
+            <p>03:18</p>
+          </info>
+        </li>
+        <li style="background-image: url(&#39;change.png&#39;)">
+          <info name="https://player.vimeo.com/video/123999177?title=0&amp;byline=0&amp;portrait=0">
+            <p>Change</p>
+            <p>00:59</p>
+          </info>
+        </li>
+        <li style="background-image: url(&#39;dumped.png&#39;)">
+          <info name="https://player.vimeo.com/video/123974456?title=0&amp;byline=0&amp;portrait=0">
+            <p>Jesse gets dumped</p>
+            <p>02:50</p>
+          </info>
+        </li>
+        <li style="background-image: url(&#39;comes_home.png&#39;)">
+          <info name="https://player.vimeo.com/video/123999179?title=0&amp;byline=0&amp;portrait=0">
+            <p>Jesse comes home</p>
+            <p>02:25</p>
+          </info>
+        </li>
+        <li style="background-image: url(&#39;gym.png&#39;)">
+          <info name="https://player.vimeo.com/video/123974454?title=0&amp;byline=0&amp;portrait=0">
+            <p>Jesse &amp; Robert go to the gym</p>
+            <p>00:17</p>
+          </info>
+        </li>
+        <li style="background-image: url(&#39;comes_home_again.png&#39;)">
+          <info name="https://player.vimeo.com/video/124059915?title=0&amp;byline=0&amp;portrait=0">
+            <p>Jesse comes home again</p>
+            <p>01:57</p>
+          </info>
+        </li>
+        <li style="background-image: url(&#39;fight.png&#39;)">
+          <info name="https://player.vimeo.com/video/123974455?title=0&amp;byline=0&amp;portrait=0">
+            <p>Jesse &amp; Robert get into a fight</p>
+            <p>00:28</p>
+          </info>
+        </li>
+        <li style="background-image: url(&#39;buy_wine.png&#39;)">
+          <info name="https://player.vimeo.com/video/124008378?title=0&amp;byline=0&amp;portrait=0">
+            <p>Jesse &amp; Robert buy a bottle of wine</p>
+            <p>02:25</p>
+          </info>
+        </li>
+        <li style="background-image: url(&#39;snowed_in.png&#39;)">
+          <info name="https://player.vimeo.com/video/123999178?title=0&amp;byline=0&amp;portrait=0">
+            <p>Jesse &amp; Robert get snowed in</p>
+            <p>00:37</p>
+          </info>
+        </li>
+      </ul>
+
+      <footer>
+        <img src="./Robert & Jesse's Video Palace_files/animated_footer.gif">
+        <p>Logo Design by John Allman | Website Design by Haley Thurston </p>
+      </footer>
+    </div>
+
+    <div class="modal-wrapper close" style="display: block;">
+      <container>
+        <p class="close-modal close">X</p>
+        <br>
+        <iframe src="./Robert & Jesse's Video Palace_files/124008378.html" width="900" height="506" frameborder="0" class="modal-player" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      </container>
+    </div>
+  
+  <script>
+    $('info').click(function (event) {
+      $('.modal-player').attr('src', $(this).attr('name'));
+      $('.modal-wrapper').fadeIn(600);
+    })
+
+    $('.close').click(function (event) {
+      $('.modal-wrapper').fadeOut(400);
+      $('.modal-player').attr('src', '');
+    })
+  </script>
+
+</body></html>

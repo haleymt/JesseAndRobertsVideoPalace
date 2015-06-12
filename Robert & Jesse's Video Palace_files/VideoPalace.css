@@ -1,0 +1,143 @@
+body {
+  background: black;
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.header-wrapper {
+  position: relative;
+}
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 850px;
+  margin-bottom: -25px;
+}
+
+.latest {
+  font-family: 'Roboto Slab', serif;
+  color: white;
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+  margin-top: 20px;
+}
+
+featured {
+  margin-left: calc(50% - 400px);
+  width: 800px;
+  height: 480px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+}
+
+featured iframe {
+  margin-top: 75px;
+  margin-right: 100px;
+}
+
+.videos {
+  margin-left: -50px;
+}
+
+.videos li {
+  width: 300px;
+  min-height: 150px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  display: inline-block;
+  margin: 15px;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+}
+
+
+info {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: bold;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  -ms-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+info p:first-child {
+  padding-top: 35px;
+}
+
+info:hover {
+  cursor: pointer;
+}
+
+li:hover info {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in;
+  -moz-transition: opacity 0.3s ease-in;
+  -o-transition: opacity 0.3s ease-in;
+  -ms-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+}
+
+footer {
+  margin-bottom: 100px;
+}
+
+footer p {
+  color: white;
+  font-family: sans-serif;
+  padding: 10px;
+  margin: 0;
+}
+
+footer img {
+  width: 850px;
+}
+
+.modal-wrapper {
+  display: none;
+  position: fixed !important;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.7);
+}
+
+.modal-wrapper container {
+  margin-top: 100px;
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  display: block;
+  z-index: 100;
+  margin-left: calc(50% - 500px) !important;
+}
+
+.close-modal {
+  color: rgba(255, 255, 255, 0.8);;
+  font-family: sans-serif;
+  font-size: 20px;
+  float: right;
+  margin-top: 0;
+}
+
+.close-modal:hover {
+  color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+}
