@@ -1,3 +1,8 @@
+@font-face {
+  font-family: LearningPro;
+  src: url("./LearningCurve_OT.otf") format("opentype");
+}
+
 body {
   background: black;
   text-align: center;
@@ -19,10 +24,13 @@ header img {
 }
 
 .latest {
-  font-family: 'Roboto Slab', serif;
+  /*font-family: 'Roboto Slab', serif;*/
+  font-family: LearningPro;
   color: white;
-  font-size: 40px;
-  font-weight: 300;
+  font-size: 55px;
+  /*font-size: 40px;*/
+  font-weight: normal;
+  /*font-weight: 300;*/
   margin: 0;
   margin-top: 20px;
 }
@@ -42,7 +50,9 @@ featured iframe {
 }
 
 .videos {
-  margin-left: -50px;
+  width: 1000px;
+  display: block;
+  margin-left: calc(50% - 550px);
 }
 
 .videos li {
