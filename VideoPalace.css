@@ -24,13 +24,13 @@ header img {
 }
 
 .latest {
-  /*font-family: 'Roboto Slab', serif;*/
-  font-family: LearningPro;
+  font-family: 'Roboto Slab', serif;
+  /*font-family: LearningPro;*/
   color: white;
-  font-size: 55px;
-  /*font-size: 40px;*/
-  font-weight: normal;
-  /*font-weight: 300;*/
+  /*font-size: 55px;*/
+  font-size: 40px;
+  /*font-weight: normal;*/
+  font-weight: 300;
   margin: 0;
   margin-top: 20px;
 }
@@ -108,9 +108,11 @@ footer {
 
 footer p {
   color: white;
-  font-family: sans-serif;
+  /*font-family: sans-serif;*/
+  font-family: LearningPro;
   padding: 10px;
   margin: 0;
+  font-size: 25px;
 }
 
 footer img {
