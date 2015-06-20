@@ -45,8 +45,9 @@ featured {
 }
 
 featured iframe {
-  margin-top: 75px;
+  margin-top: 60px;
   margin-right: 100px;
+  margin-bottom: 10px;
 }
 
 .videos {
@@ -104,6 +105,16 @@ li:hover info {
 
 footer {
   margin-bottom: 100px;
+}
+
+footer a {
+  color: white;
+  /*font-family: sans-serif;*/
+  font-family: LearningPro;
+  padding: 10px;
+  margin: 0;
+  font-size: 35px;
+  text-decoration: none;
 }
 
 footer p {
