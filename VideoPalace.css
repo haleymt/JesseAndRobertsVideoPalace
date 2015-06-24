@@ -54,6 +54,7 @@ featured iframe {
   width: 1000px;
   display: block;
   margin-left: calc(50% - 550px);
+  margin-bottom: 0;
 }
 
 .videos li {
