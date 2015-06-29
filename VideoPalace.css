@@ -38,7 +38,7 @@ header img {
 featured {
   margin-left: calc(50% - 400px);
   width: 800px;
-  height: 480px;
+  height: 500px;
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
@@ -110,21 +110,27 @@ footer {
 
 footer a {
   color: white;
-  /*font-family: sans-serif;*/
-  font-family: LearningPro;
+  font-family: sans-serif;
   padding: 10px;
   margin: 0;
-  font-size: 35px;
+  font-size: 20px;
   text-decoration: none;
+}
+
+footer a:hover {
+  color: yellow;
+}
+
+footer a:active {
+  color: #FF33CC;
 }
 
 footer p {
   color: white;
-  /*font-family: sans-serif;*/
-  font-family: LearningPro;
+  font-family: sans-serif;
   padding: 10px;
   margin: 0;
-  font-size: 25px;
+  font-size: 15px;
 }
 
 footer img {
