@@ -6,6 +6,7 @@
     <link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="./VideoPalace.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="./jquery-2.1.1.js"></script>
   </head>
   <body>
@@ -15,38 +16,48 @@
       </header>
       <!-- <p class='latest'>This is what we're doing now.</p> -->
       <featured>
-        <iframe src="https://player.vimeo.com/video/136743508?title=0&byline=0&portrait=0" width="800" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <img class="featured-trigger" src='img/banner1.png'/>
+        <!-- <iframe src="https://player.vimeo.com/video/136743508?title=0&byline=0&portrait=0" width="800" height="400" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->
+        <div class="play-arrow featured-trigger"><i class="material-icons">play_arrow</i></div>
       </featured>
 
-      <ul class='videos'>
-        <li style="background-image: url('img/brunch.png')">
+      <ul class='videos large-videos'>
+        <li style="background-image: url('img/brunch_large.png')">
           <info name="https://player.vimeo.com/video/135479506?title=0&byline=0&portrait=0">
             <p>BRUNCH</p>
             <p>02:20</p>
           </info>
         </li>
-        <li style="background-image: url('img/most_important_project.png')">
+        <li style="background-image: url('img/most_important_large.png')">
           <info name="https://player.vimeo.com/video/132135270?title=0&byline=0&portrait=0">
             <p>Our most important project yet</p>
             <p>02:49</p>
           </info>
         </li>
-        <li style="background-image: url('img/loses_phone.png')">
+        <li style="background-image: url('img/loses_phone_large.png')">
           <info name="https://player.vimeo.com/video/123974453?title=0&byline=0&portrait=0">
             <p>Robert loses his phone</p>
             <p>03:18</p>
+          </info>
+        </li>
+        <li style="background-image: url('img/dumped_large.png')">
+          <info name="https://player.vimeo.com/video/123974456?title=0&byline=0&portrait=0">
+            <p>Jesse gets dumped</p>
+            <p>02:50</p>
+          </info>
+        </li>
+      </ul>
+      <ul class='videos'>
+        <li style="background-image: url('img/talk_too_loud.png')">
+          <info name="https://player.vimeo.com/video/136743508?title=0&byline=0&portrait=0">
+            <p>Do I talk too loud?</p>
+            <p>00:40</p>
           </info>
         </li>
         <li style="background-image: url('img/anatomy_of_a_scene.png')">
           <info name="https://player.vimeo.com/video/125855414?title=0&byline=0&portrait=0">
             <p>Anatomy of a Scene | "Change"</p>
             <p>00:59</p>
-          </info>
-        </li>
-        <li style="background-image: url('img/dumped.png')">
-          <info name="https://player.vimeo.com/video/123974456?title=0&byline=0&portrait=0">
-            <p>Jesse gets dumped</p>
-            <p>02:50</p>
           </info>
         </li>
         <li style="background-image: url('img/comes_home.png')">
@@ -101,25 +112,150 @@
       </footer>
     </div>
 
-    <div class='modal-wrapper close'>
+    <div class='main-modal-wrapper modal-wrapper close'>
+      <i class='close-modal close material-icons'>clear</i>
       <div class='modal-content'>
         <container>
-          <p class='close-modal close'>X</p>
-          <br>
-          <iframe src="" width="900" height="506" frameborder="0" class="modal-player" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <iframe id="player1" src="" width="900" height="506" frameborder="0" class="main-modal-player modal-player" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </container>
+      </div>
+    </div>
+
+    <div class='featured-modal-wrapper modal-wrapper close'>
+      <i class='close-modal close material-icons'>clear</i>
+      <div class='modal-content'>
+        <container>
+          <div class="share-buttons hidden">
+            <div class="back" name="https://player.vimeo.com/video/124008378?api=1&player_id=player1&title=0&byline=0&portrait=0">Back to the main video</div>
+            <div class="share">Share!</div>
+          </div>
+          <iframe id="player1" src="https://player.vimeo.com/video/124008378?api=1&player_id=player1&title=0&byline=0&portrait=0" width="850" height="478" frameborder="0" class="featured-modal-player modal-player" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          <div class="carousel">
+            <div class="carousel-arrow left"><i class="material-icons">keyboard_arrow_left</i></div>
+            <div class="carousel-arrow right"><i class="material-icons">keyboard_arrow_right</i></div>
+            <div class="carousel-thumbs">
+              <div class="carousel-thumb" style="background-image: url('img/get_to_know_amber.png')">
+                <div id="overlay-0" name="0" class="overlay play">
+                  <!-- <div class="play" name="0"><i class="material-icons">play_arrow</i></div>
+                  <div class="small-share"><span>Share</span><i class="material-icons">share</i></div> -->
+                  <p id="np-0" class="now-playing hidden">now playing...</p>
+                  <p>Robert and Jesse Get To Know Amber</p>
+                </div>
+              </div>
+              <div class="carousel-thumb" style="background-image: url('img/robert_screening.png')">
+                <div id="overlay-1" name="1" class="overlay play">
+                  <!-- <div class="play" name="1"><i class="material-icons">play_arrow</i></div>
+                  <div class="small-share"><span>Share</span><i class="material-icons">share</i></div> -->
+                  <p id="np-1" class="now-playing hidden">now playing...</p>
+                  <p>Robert Hosts a Screening</p>
+                </div>
+              </div>
+              <div class="carousel-thumb" style="background-image: url('img/stuck_in_tree.png')">
+                <div id="overlay-2" name="2" class="overlay play">
+                  <!-- <div class="play" name="2"><i class="material-icons">play_arrow</i></div>
+                  <div class="small-share"><span>Share</span><i class="material-icons">share</i></div> -->
+                  <p id="np-2" class="now-playing hidden">now playing...</p>
+                  <p>Robert Gets Stuck In A Tree</p>
+                </div>
+              </div>
+              <div class="carousel-thumb" style="background-image: url('img/jesse_alone.png')">
+                <div id="overlay-3" name="3" class="overlay play">
+                  <!-- <div class="play" name="3"><i class="material-icons">play_arrow</i></div>
+                  <div class="small-share"><span>Share</span><i class="material-icons">share</i></div> -->
+                  <p id="np-3" class="now-playing hidden">now playing...</p>
+                  <p>Jesse Spends Some Time Alone</p>
+                </div>
+              </div>
+              <div class="carousel-thumb" style="background-image: url('img/do_something_crazy.png')">
+                <div id="overlay-4" name="4" class="overlay play">
+                  <!-- <div class="play" name="4"><i class="material-icons">play_arrow</i></div>
+                  <div class="small-share"><span>Share</span><i class="material-icons">share</i></div> -->
+                  <p id="np-4" class="now-playing hidden">now playing...</p>
+                  <p>Robert, Jesse And Amber Do Something Crazy</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </container>
       </div>
     </div>
   </body>
   <script>
+    var carouselVids =
+      ["https://player.vimeo.com/video/137217476?api=1&player_id=player1&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/137217475?api=1&player_id=player1&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/137217473?api=1&player_id=player1&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/137217478?api=1&player_id=player1&title=0&byline=0&portrait=0",
+      "https://player.vimeo.com/video/137217471?api=1&player_id=player1&title=0&byline=0&portrait=0"];
+    var index;
+    var featuredSrc = "https://player.vimeo.com/video/137217480?api=1&player_id=player1&title=0&byline=0&portrait=0";
+
+    // var iframe = $('#player1')[0];
+    // var player = $(iframe);
+    //
+    // player.addEvent('ready', function() {
+    //   player.addEvent('click', share);
+    // });
+
     $('info').click(function (event) {
-      $('.modal-player').attr('src', $(this).attr('name'));
-      $('.modal-wrapper').fadeIn(600);
-    })
+      $('.main-modal-player').attr('src', $(this).attr('name'));
+      $('.main-modal-wrapper').fadeIn(600);
+    });
+
+    $('.featured-trigger').click(function (event) {
+      $('.featured-modal-player').attr('src', featuredSrc);
+      $('.featured-modal-wrapper').fadeIn(600);
+    });
 
     $('.close').click(function (event) {
       $('.modal-wrapper').fadeOut(400);
       $('.modal-player').attr('src', '');
-    })
+      $('.now-playing').addClass('hidden');
+      $('.overlay').removeClass('active');
+      // $('.play').css('opacity', 1);
+      $('.share-buttons').addClass('hidden');
+    });
+
+    $('.play').click(function (event) {
+      event.stopPropagation();
+      index = $(this).attr('name');
+      $('.featured-modal-player').attr('src', carouselVids[index]);
+      $('.share-buttons').removeClass('hidden');
+      $('.now-playing').addClass('hidden');
+      $('#np-' + index).removeClass('hidden');
+      $('.overlay').removeClass('active');
+      $('#overlay-' + index).addClass('active');
+      // $('.play').css('opacity', 1);
+      // $(this).css('opacity', 0.6);
+    });
+
+    $('.back').click(function (event) {
+      event.stopPropagation();
+      $('.modal-player').attr('src', $(this).attr('name'));
+      $('.share-buttons').addClass('hidden');
+      $('.now-playing').addClass('hidden');
+    });
+
+    $('.right').click(function (event) {
+      event.stopPropagation();
+      $('.carousel-thumbs').animate({
+        scrollLeft: 800
+      }, 800)
+    });
+
+    $('.left').click(function (event) {
+      event.stopPropagation();
+      $('.carousel-thumbs').animate({
+        scrollLeft: 0
+      }, 800)
+    });
+
+    $('.carousel').click(function (event) {
+      event.stopPropagation();
+    });
+
+    // function share() {
+    //   console.log('hi');
+    // };
   </script>
 </html>
