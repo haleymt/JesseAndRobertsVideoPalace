@@ -40,8 +40,8 @@ featured {
   width: 600px;
   /*height: 500px;*/
   height: 400px;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 60px;
   background-size: contain;
   background-repeat: no-repeat;
   display: block;
@@ -132,6 +132,10 @@ featured:hover .play-arrow {
   height: 200px;
 }
 
+.large-videos {
+  margin-top: 50px;
+}
+
 
 info {
   top: 0;
@@ -172,6 +176,7 @@ li:hover info {
 }
 
 footer {
+  margin-top: 20px;
   margin-bottom: 100px;
 }
 
